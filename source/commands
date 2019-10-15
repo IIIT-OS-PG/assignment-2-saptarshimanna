@@ -1,0 +1,19 @@
+./peer 8888 127.0.0.1 tracker_info.txt
+
+./tracker 9001 127.0.0.1 tracker_info.txt
+
+create_user u001 pass
+create_user u002 admin
+create_user u003 word
+create_user u004 pass
+
+upload_file filename filepath
+
+upload_file testvideo /home/haddock/Documents/IIIT_Monsoon_2019/test1/fatburning.mp4
+upload_file testvideo /home/haddock/Documents/IIIT_Monsoon_2019/test2/fatburning.mp4
+upload_file testvideo /home/haddock/Documents/IIIT_Monsoon_2019/fatburning.mp4
+
+download_file testvideo /home/haddock/Documents/IIIT_Monsoon_2019/testfatburning.mp4
+
+list_files all
+exit client
